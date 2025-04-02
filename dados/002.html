@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+            /*Comentário em CSS e também em Javascript*/
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h3>Páginas</h3>
+        <a href="index.html">001</a>
+        <a href="003.html">003</a>
+    </nav>
+    <p>Aqui você aprendeu a converter o tipo de operador (typeof) <strong>String</strong> para <strong>Number</strong>
+    </p>
+    <script>
+        /*  Comversão de tipo de operador (Typeof)
+            Number.parseInt (para números inteiros)
+            Number.parseFloat (para números fracionais)
+        */
+        var n1 = Number.parseInt(window.prompt('Digite um número.')) // Conversão de String => Number
+        var n2 = Number.parseInt(window.prompt('Digite outro número')) // Conversão de String => Number
+        var soma = n1 + n2 //Resultado
+        //window.alert('A soma dos valores é '+ soma)
+        window.alert(`A soma dos valores: ${n1} + ${n2} é = ${soma}`)
+    </script>
+</body>
+</html>

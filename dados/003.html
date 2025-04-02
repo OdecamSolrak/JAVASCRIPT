@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h3>Páginas</h3>
+        <a href="index.html">001</a>
+        <a href="002.html">003</a>
+    </nav>
+    <h1>Aprendendo novos comandos</h1>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, <strong>${nome}</strong> seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Em letras maiúsculas fica ${nome.toUpperCase()}.<br>`)
+        document.write(`Em letras minúsculas fica ${nome.toLowerCase()}.`)
+
+        /*  Informações extras
+            var n1 = 1545.5
+            n1 = 1545.5
+
+            n1.toFixed(2)
+            = 1545.50
+
+            n1.toFixed(2).replace('.',',')
+            = 1545,50
+
+            n1.toLocaleString(pr-BR, {style: 'currency', currency: 'BRL'})
+            = R$ 1.545,50
+            n1.toLocaleString(pr-BR, {style: 'currency', currency: 'USD'})
+            = US$ 1.545,50
+            n1.toLocaleString(pr-BR, {style: 'currency', currency: 'EUR'})
+            = € 1.545,50
+        */
+    </script>
+    <p>Informações extras estão visíveis no código e ocultas na página.</p>
+</body>
+</html>
