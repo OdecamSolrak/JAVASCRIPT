@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+            padding: 20px;
+            /*Comentário em CSS e também em Javascript*/
+        }
+
+        h1, h2 {
+            text-decoration: underline;
+        }
+
+        p.marc, ol.marc {
+            color: rgb(167, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de operadores</h1>
+    <ol>
+        <h2>Aritméticos:</h2>
+        <li><strong>Soma</strong> => <strong>+</strong></li>
+        <p>Ex.: 5 <strong>+</strong> 2 = 7</p>
+        <li><strong>Subtração</strong> => <strong>-</strong></li>
+        <p>Ex.: 5 <strong>-</strong> 2 = 3</p>
+        <li><strong>Multiplicação</strong> => <strong>*</strong></li>
+        <p>Ex.: 5 <strong>*</strong> 2 = 10</p>
+        <li><strong>Divisão</strong> => <strong>/</strong></li>
+        <p>Ex.: 5 <strong>/</strong> 2 = 2.5</p>
+        <li><strong>Divisão inteira</strong> => <strong>%</strong></li>
+        <p>Ex.: 5 <strong>%</strong> 2 = 1 (O resultado é o resto da divisão inteira)</p>
+        <li><strong>Potênciação</strong> => <strong>**</strong></li>
+        <p>Ex.: 5 <strong>**</strong> 2 = 25 (5² = 25)</p>
+    </ol>
+    <p class="marc"> <strong>Obs.: </strong>Ordem de precedência:</p>
+    <ol class="marc">
+        <li>Parênteses ()</li>
+        <li>Potência **</li>
+        <li>Multiplicação *, Divisão / e Divisão inteira %</li>
+        <li>Soma + e Subtração -</li>
+    </ol>
+
+    <h2>Atribuição:</h2>
+    <p>É o ato de atribuir um valor a uma variável.</p>
+    <ul>
+        <p>Exemplo:</p>
+        <li><strong>Atribuição simples</strong> é representado pelo sinal de igual (<strong>=</strong>)</li>
+        <p>var a <strong>=</strong> 3 + 3 (a = 8)</p>
+        <p>var b <strong>=</strong> a % 5 (b = 3)</p>
+        <p> var c <strong>=</strong> 5 * b ** 2 (c = 45)</p>
+        <li><strong>Auto-Atribuição</strong> é quando a atribuição é feita à própria variável, substituindo o valor anterior.</li>
+        <p>Exemplo:</p>
+        <p>var a = 3 (a = 3)</p>
+        <p>a = a + 4 (a = 7) (simplificação a += 4 (a =7))</p>
+        <p>a = a - 5 (a = 2) (simplificação a -= 5 (a = 2))</p>
+        <li><strong>Incremento</strong> é quando soma ou subtrai pelo valor (1)</li>
+        <p>Exemplo:</p>
+        <p>var a = 5 (a = 5)</p>
+        <p>a = a + 1 (a = 6) (simplificação a ++ (a = 6))</p>
+        <p>a = a - 1 (a = 5) (simplificação a -- (a = 5))</p>
+    </ul>
+    <h2>Relacionais:</h2>
+    <p>Toda a expressão que tenha um operador relacional ligado à ela, o resultado dessa expressão vai ser sempre um resultado booleano (verdadeiro ou falso).</p>
+    <ol>
+        <li><strong>Maior: ></strong></li>
+        <p>Ex.: 5 > 2 = True (verdadeiro)</p>
+        <li><strong>Menor: <</strong></li>
+        <p>Ex.: 7 - 4 = False (falso)</p>
+        <li><strong>Maior ou igual: >=</strong></li>
+        <p>Ex.: 8 >= 8 = True (verdadeiro)</p>
+        <li><strong>Menor ou igual: <=</strong></li>
+        <p>Ex.: 9 <= 7 = False (false)</p>
+        <li><strong>Igual: ==</strong></li>
+        <p>Ex.: 5 == 5 = True (verdadeiro)</p>
+        <li><strong>Diferente: !=</strong></li>
+        <p>Ex.: 4 != 4 = False (falso)</p>
+    </ol>
+    <br>
+    <ul>
+        <li><strong>Relacionais de Identidade</strong></li>
+        <p>Exemplo:</p>
+        <p>5 == 5 = True (verdadeiro porque possuem o mesmo valor)</p>
+        <p>5 == '5' = True (verdadeiro porque possuem o mesmo valor idependete do tipo)</p>
+        <p>5 === '5' = False (falso porque possuem o mesmo valor mais não são do mesmo tipo)</p>
+        <p>5 === 5 = True (verdadeiro porque possuem o mesmo valor e são do mesmo tipo)</p>
+    </ul>
+    <h2>Lógicos:</h2>
+    <ol>
+        <li><strong>Negação => !</strong> (não)</li>
+        <p>Operador unário, quando só tem um valor lógico (após o operador).</p>
+        <p>Após <strong>!</strong> entra uma expressão True ou False</p>
+        <ul>
+            <strong>
+                <li>! True = O que não é True é False</li>
+                <li>! False = O que não é False é True</li>
+            </strong>
+        </ul>
+        <br>
+        <li><strong>Conjunção => &&</strong> (e)</li>
+        <p>Operador binário, quando tem dois valores lógicos (Um antes do operador e um depois)</p>
+        <ul>
+            <strong>
+                <li>True && True = True</li>
+                <li>True && False = False</li>
+                <li>False && True = False</li>
+                <li>False && False = False</li>
+            </strong>
+        </ul>
+        <br>
+        <li><strong>Disjunção => ||</strong> (ou)</li>
+        <p>Operador binário, quando tem dois valores lógicos (Um antes do operador e um depois)</p>
+        <ul>
+            <strong>
+                <li>True || True = True</li>
+                <li>True || False = True</li>
+                <li>False || True = True</li>
+                <li>False || False = False</li>
+            </strong>
+        </ul>
+    </ol>
+    <p>Exemplo:</p>
+    <p>var a = 5</p>
+    <p>var b = 8</p>
+    <p>a > b && b / 2 == 2 (5 é maoir que 8 e 8/2 = 2) False</p>
+    <p>a < b || b / 2 == 2 (5 é menor que 8 ou 8/2 = 2) True</p>
+    <p class="marc"> <strong>Obs.: </strong>Ordem de precedência:</p>
+    <ol class="marc">
+        <li>Negação => ! (não)</li>
+        <li>Conjunção => && (e)</li>
+        <li>Disjunção => || (ou)</li>
+    </ol>
+    <h2>Ternário:</h2>
+    <p>Operador Ternário, quando tem três valores lógicos.</p>
+    <p><strong>?</strong> (caso seja True)</p>
+    <p><strong>:</strong> (caso seja False)</p>
+    <p>Teste lógico <strong>?</strong> True <strong>:</strong> False</p>
+    <br>
+    <p>Exemplo:</p>
+    <p>var média = 5.5</p>
+    <p>média > 7 ? 'Aprovado' : 'Reprvado' (5.5 é maior que 7 caso seja True será Aprovado, caso seja False será Reprovado). O resultado é 'Reprovado'</p>
+    <p>média += 3</p>
+    <p>média = 8.5</p>
+    <p>média > 7 ? 'Aprovado' : 'Reprvado' (5.5 é maior que 7 caso seja True será Aprovado, caso seja False será Reprovado). O resultado é 'Aprovado'</p>
+    <br>
+    <p>Exemplo:</p>
+    <p>var x = 8</p>
+    <p>x = 8</p>
+    <p>var resultado = x % 2 == 0 ? 5 : 9</p>
+    <p>resultado = 5</p>
+</body>
+</html>
