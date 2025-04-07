@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="evento.html">002</a>
+    </nav>
+    <h1>DOM - Document Object Model</h1>
+    <h2>O que é DOM?</h2>
+    <p>É um Modelo de Documentos para Objetos. Basicamente é um conjunto de objetos dentro do seu navegador que da acesso aos componentes internos do Website.</p>
+    <h2>Árvore DOM:</h2>
+    <p><strong>Window:</strong></p>
+    <p><strong>Location:</strong></p>
+    <p><strong>Document:</strong></p>
+    <p><strong>History:</strong></p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript:
+    <div class="ex">Bloco</div>
+    <div id="ou">Bloco</div>
+<br>
+    <script>
+        window.document.write(window.navigator.appName, '<br>')
+        window.document.write(window.document.URL, '<br>')
+        window.document.write(window.document.charset, '<br>')
+        var p1 = window.document.getElementsByTagName('p') [5] /*O número é a posição em que se encontra a tag desejada, iniciando por 0*/
+        p1.style.color = 'red' // Alterar a cor.
+        window.document.write('Exemplo 1: ' + p1.innerText, '<br>')
+        window.document.write('Exemplo 2: ' + p1.innerHTML, '<br>')
+        var d2 = document.getElementById('ou')
+        d2.style.background = 'blue'
+        var d1 = document.querySelector('div.ex')
+        d1.style.background = 'red'
+    </script>
+</body>
+</html>
