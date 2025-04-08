@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Condições</h1>
+    <p><strong>if</strong> = se</p>
+    <p><strong>else</strong> = se não</p>
+    <h2>Exemplo:</h2>
+    <p>Velocidade máxima permitida: 80 Km/h</p>
+    <p>Velocidade mínima permitida: 40 Km/h</p>
+    Velocidade do carro: <input type="number" name="velx" id="velx" min="0" max="200"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="resultado">
+        
+    </div>
+
+    <script>
+        function calcular() {
+        var vel = window.document.querySelector('input#velx')
+        var resultado = window.document.querySelector('div#resultado')
+        var v = Number(vel.value)
+        resultado.innerHTML = `Velocidade atual: ${v} Km/h <br>`
+        if (v > 80) {
+            resultado.innerHTML += `Você foi multado por ultrapassar o limite máximo permitido!<br>`
+        } if (v < 40) {
+            resultado.innerHTML += `Você foi multado por andar a baixo da velocidade mínima permitidada!<br>`
+        }
+        resultado.innerHTML += `Respeite a velocidade máxima permitida no trânsito e use o cinto de segurança!`
+        }
+    </script>
+</body>
+</html>
